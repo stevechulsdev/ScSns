@@ -1,0 +1,19 @@
+{
+  "project_info": {
+    "project_number": "470632774829",
+    "firebase_url": "https://logintestproject-8544c.firebaseio.com",
+    "project_id": "logintestproject-8544c",
+    "storage_bucket": "logintestproject-8544c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470632774829:android:ef3d8289af27725e",
+        "android_client_info": {
+          "package_name": "com.stevechulsdev.scsns"
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
