@@ -12,7 +12,12 @@
         "android_client_info": {
           "package_name": "com.stevechulsdev.scsns"
         }
-      }
+      },
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ]
     }
   ],
   "configuration_version": "1"
