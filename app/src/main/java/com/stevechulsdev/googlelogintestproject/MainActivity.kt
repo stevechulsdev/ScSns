@@ -14,54 +14,54 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        Log.e(TAG, "${ScSnsGoogle.isLogin()}")
+//        Log.e(TAG, "${ScSnsGoogle.isLogin()}")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ScSnsGoogle.initLogin(this, "")
-
-        bt_login.setOnClickListener {
-            ScSnsGoogle.login(this, 9090)
-        }
-
-        bt_logout.setOnClickListener {
-            ScSnsGoogle.logout(this, object : ScSnsGoogle.LogoutInterface {
-                override fun success() {
-                    Log.e(TAG, "logout success")
-                }
-
-                override fun fail(errorMsg: String) {
-                    Log.e(TAG, "logout fail : $errorMsg")
-                }
-            })
-        }
+//        ScSnsGoogle.initLogin(this, "")
+//
+//        bt_login.setOnClickListener {
+//            ScSnsGoogle.login(this, 9090)
+//        }
+//
+//        bt_logout.setOnClickListener {
+//            ScSnsGoogle.logout(this, object : ScSnsGoogle.LogoutInterface {
+//                override fun success() {
+//                    Log.e(TAG, "logout success")
+//                }
+//
+//                override fun fail(errorMsg: String) {
+//                    Log.e(TAG, "logout fail : $errorMsg")
+//                }
+//            })
+//        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        when(requestCode) {
-            9090 -> {
-                ScSnsGoogle.getUser(this@MainActivity, data!!, object : ScSnsGoogle.GetUserInterface {
-                    override fun success(user: FirebaseUser) {
-                        user.apply {
-                            Log.e(TAG, "name : $displayName")
-                            Log.e(TAG, "email : $email")
-                            Log.e(TAG, "photoUrl : $photoUrl")
-                            Log.e(TAG, "emailVerified : $isEmailVerified")
-                            Log.e(TAG, "uid : $uid")
-                        }
-                    }
-
-                    override fun fail(errorMsg: String) {
-                        Log.e(TAG, errorMsg)
-                    }
-                })
-            }
-        }
+//        when(requestCode) {
+//            9090 -> {
+//                ScSnsGoogle.getUser(this@MainActivity, data!!, object : ScSnsGoogle.GetUserInterface {
+//                    override fun success(user: FirebaseUser) {
+//                        user.apply {
+//                            Log.e(TAG, "name : $displayName")
+//                            Log.e(TAG, "email : $email")
+//                            Log.e(TAG, "photoUrl : $photoUrl")
+//                            Log.e(TAG, "emailVerified : $isEmailVerified")
+//                            Log.e(TAG, "uid : $uid")
+//                        }
+//                    }
+//
+//                    override fun fail(errorMsg: String) {
+//                        Log.e(TAG, errorMsg)
+//                    }
+//                })
+//            }
+//        }
     }
 
     //    private lateinit var googleSignInClient: GoogleSignInClient
