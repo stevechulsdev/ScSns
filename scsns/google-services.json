@@ -1,23 +1,39 @@
 {
   "project_info": {
-    "project_number": "470632774829",
-    "firebase_url": "https://logintestproject-8544c.firebaseio.com",
-    "project_id": "logintestproject-8544c",
-    "storage_bucket": "logintestproject-8544c.appspot.com"
+    "project_number": "579348373994",
+    "firebase_url": "https://scsns-5bb01.firebaseio.com",
+    "project_id": "scsns-5bb01",
+    "storage_bucket": "scsns-5bb01.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:470632774829:android:ef3d8289af27725e",
+        "mobilesdk_app_id": "1:579348373994:android:5af7a764a72d93d9",
         "android_client_info": {
           "package_name": "com.stevechulsdev.scsns"
         }
       },
+      "oauth_client": [
+        {
+          "client_id": "579348373994-4eric47cp102ht7na6i8suhjaqmgl1h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyCRxcLuNNa3s6Olzr_WXws8TJN8Xv30FRQ"
         }
-      ]
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579348373994-4eric47cp102ht7na6i8suhjaqmgl1h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
