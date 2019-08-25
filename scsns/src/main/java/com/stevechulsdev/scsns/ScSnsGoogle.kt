@@ -15,7 +15,7 @@ object ScSnsGoogle {
     private val TAG: String = javaClass.simpleName
 
     private lateinit var googleSignInClient: GoogleSignInClient
-    private lateinit var auth: FirebaseAuth
+    private var auth: FirebaseAuth = FirebaseAuth.getInstance()
 
     fun isLogin(): Boolean {
         auth.currentUser?.let {
@@ -26,8 +26,6 @@ object ScSnsGoogle {
     }
 
     fun initLogin(activity: Activity, requestIdToken: String) {
-        auth = FirebaseAuth.getInstance()
-
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(requestIdToken)
             .requestEmail()
